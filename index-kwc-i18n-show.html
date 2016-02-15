@@ -1,0 +1,68 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="kwc-i18n.html">
+
+<dom-module id="index-kwc-i18n-show">
+  <template>
+    <h1><kwc-i18n key="show.title" show></kwc-i18n></h1>
+
+    <p>
+      <kwc-i18n key="show.description" show></kwc-i18n>
+    </p>
+
+    <h3><kwc-i18n key="show.parameters.title" show></kwc-i18n></h3>
+
+    <ul>
+      <li>
+        key:
+        <kwc-i18n key="show.parameters.key" show></kwc-i18n>
+      </li>
+      <li>
+        show:
+        <kwc-i18n key="show.parameters.show" show></kwc-i18n>
+      </li>
+      <li>
+        var:
+        <kwc-i18n key="show.parameters.var" show></kwc-i18n>
+      </li>
+    </ul>
+
+    <h3><kwc-i18n key="show.use-var.title" show></kwc-i18n></h3>
+
+    <p>
+      <kwc-i18n key="show.use-var.description" show></kwc-i18n>
+    </p>
+
+    <p>
+      <label for="input">
+        <kwc-i18n key="show.use-var.label" show></kwc-i18n>
+      </label>
+
+      <kwc-i18n key="show.use-var.placeholder" var="{{placeholderVar}}"></kwc-i18n>
+      <input type="text" placeholder="[[placeholderVar]]">
+    </p>
+
+    <button id="change">
+      <kwc-i18n key="show.change" show></kwc-i18n>
+    </button>
+
+    <h3><kwc-i18n key="show.more.title" show></kwc-i18n></h3>
+    
+    <p>
+      <kwc-i18n key="show.more.description" show></kwc-i18n>
+    </p>
+  </template>
+  <script>
+    Polymer({
+      "is": "index-kwc-i18n-show",
+      
+      listeners: {
+        "change.tap": "changeTap"
+      },
+      
+      changeTap: function(e) {
+        e.preventDefault()
+        kwc_i18n.locale = kwc_i18n.locale == "en" ? "fr" : "en"
+      }
+    })
+  </script>
+</dom-module>

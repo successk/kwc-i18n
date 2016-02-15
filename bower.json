@@ -1,0 +1,27 @@
+{
+  "name": "kwc-i18n",
+  "homepage": "https://github.com/successk/kwc-i18n",
+  "authors": [
+    "Gaëtan Rizio <gaetan@rizio.fr>"
+  ],
+  "description": "A web component used to manage internationalization",
+  "version": "0.1.0",
+  "main": "kwc-i18n.html",
+  "moduleType": [],
+  "keywords": [
+    "polymer",
+    "web-components",
+    "i18n"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}

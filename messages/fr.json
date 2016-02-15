@@ -1,0 +1,23 @@
+{
+  "show": {
+    "title": "Exemple d'utilisation de <kwc-i18n>",
+    "descirption": "Cette page est une démonstration utilisant <kwc-i18n>. Comme vous pouvez l voir, c'est facile d'utilisation",
+    "parameters": {
+      "title": "Parametres",
+      "key": "`La clef du message, comme vous l'appeleriez en js (ex: \"ma.super.clef\")",
+      "show": "Si présent, affiche le message",
+      "var": "Si valorisé, enregistre le résultat de la traduction dans la variable"
+    },
+    "use-var": {
+      "title": "Quand et comment utiliser var?",
+      "description": "Le composant ne peut pas être dans l'attribut placeholder",
+      "label": "Libellé de mon champ",
+      "placeholder": "Nous avons utilisé une variable"
+    },
+    "change": "Afficher la version anglaise",
+    "more": {
+      "title": "Plus",
+      "description": "Changez la langue et rechargez la page, les traduction ne vont pas changer!"
+    }
+  }
+}

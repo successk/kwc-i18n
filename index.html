@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>kwc-i18n</title>
+
+  <script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
+
+  <link rel="import" href="kwc-i18n.html">
+  <link rel="import" href="index-kwc-i18n-show.html">
+</head>
+
+<body>
+  <div id="content">
+    <!-- We use a component because of use of variables -->
+    <index-kwc-i18n-show></index-kwc-i18n-show>
+  </div>
+
+  <script>
+    document.addEventListener('HTMLImportsLoaded', function() {
+      window.kwc_i18n.setup({
+        source: "messages/{locale}.json",
+        locale: "en",
+        save: "localStorage[kwc-i18n]",
+        date: new Date(),
+        //force: true
+      })
+    })
+  </script>
+</body>
+
+</html>

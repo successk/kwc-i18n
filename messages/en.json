@@ -1,0 +1,23 @@
+{
+  "show": {
+    "title": "Example of use of <kwc-i18n>",
+    "descirption": "This page is a demo using <kwc-i18n>. As you can see, it is easy to use",
+    "parameters": {
+      "title": "Parameters",
+      "key": "The message key, as you will call it in js (ex: \"my.super.key\")",
+      "show": "If set, show the message",
+      "var": "If set, register the translation result into the variable"
+    },
+    "use-var": {
+      "title": "When and how to use var?",
+      "description": "The component cannot be inside the placeholder attribute",
+      "label": "Label of my field",
+      "placeholder": "We used a variable"
+    },
+    "change": "Show french version",
+    "more": {
+      "title": "More",
+      "description": "Change the locale and reload, the translation will not change!"
+    }
+  }
+}

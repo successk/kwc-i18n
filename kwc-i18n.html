@@ -1,0 +1,16 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+  Parameters:
+    * key: The message key
+    * var: The variable to save translation
+    * show: If set, directly show the translation
+-->
+<dom-module id="kwc-i18n">
+  <template>
+    <template is="dom-if" if="[[show]]">[[var]]</template>
+  </template>
+
+  <script src="kwc-i18n-service.js"></script>
+  <script src="kwc-i18n.js"></script>
+</dom-module>
